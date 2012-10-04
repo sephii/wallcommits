@@ -1,0 +1,6 @@
+bin/
+include/
+lib/
+local
+*.pyc
+wallcommits/settings/local.py
