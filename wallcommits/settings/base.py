@@ -105,7 +105,7 @@ ROOT_URLCONF = 'wallcommits.urls'
 WSGI_APPLICATION = 'wallcommits.wsgi.application'
 
 TEMPLATE_DIRS = (
-        '/home/sylvain/private/wallcommits/templates',
+        os.path.join(BASE_PATH, 'templates'),
 )
 
 INSTALLED_APPS = (
