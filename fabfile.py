@@ -1,11 +1,8 @@
 import os
-import shutil
-import tempfile
 
 from fabric.api import (local, cd, get, lcd, sudo, env, prefix, execute,
         put)
 
-temp_dir = None
 env.hosts = ['wallcommits.fankhauser.name']
 env.site_user = 'wallcommits'
 env.site_group = 'wwwcln'
