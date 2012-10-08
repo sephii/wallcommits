@@ -1,5 +1,9 @@
-{% for picture in object_list %}
-    <div>
-        <img src="{{ picture.medium640.source }}"/>
-    </div>
-{% endfor %}
+{% extends "base.html" %}
+
+{% block body %}
+    {% for picture in object_list %}
+        <div>
+            <img src="{{ picture.medium640.source }}"/>
+        </div>
+    {% endfor %}
+{% endblock %}
