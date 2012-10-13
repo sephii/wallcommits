@@ -7,7 +7,7 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     url(r'^$', ListView.as_view(
-        model=Photo
+        queryset=Photo.objects.all()[:50]
     ), name='home'),
     url(r'^flickr/', include('flickr.urls')),
     url(r'^admin/', include(admin.site.urls)),
